@@ -4,7 +4,7 @@ metadata:
   name: frontend
   labels: 
     app: todonodejs
-    name: fronten
+    name: frontend
 spec: 
   host: todo.apps.ocp4-mng.example.com
   path: "/todo"
