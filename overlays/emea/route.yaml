@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  name: frontend
+  labels: 
+    app: todonodejs
+    name: fronten
+spec: 
+  host: todo.apps.ocp4-mng.example.com
+  path: "/todo"
+  to: 
+    kind: Service
+    name: frontend-emea
+    weight: 100
+  wildcardPolicy: None
