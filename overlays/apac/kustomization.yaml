@@ -1,6 +1,11 @@
 kind: Kustomization
 
 bases: 
-- ../../base
+  - ../../base
 
 nameSuffix: -apac
+
+image: 
+  - name: mysql
+    newName: registry.redhat.io/rhel8/mysql-80
+    newTag: 1-152
